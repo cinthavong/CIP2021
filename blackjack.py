@@ -58,7 +58,7 @@ def main():
     # print("player_card_value is type: ", type(player_card_value))
 
     # update the player score
-    player_score += 1 # player_card_value
+    player_score += player_card_value
 
     # dealing a card to AI or dealer
     dealer_card_one = random.randint(MIN_RANDOM, MAX_RANDOM)
