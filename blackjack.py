@@ -79,10 +79,12 @@ def main():
             player_card_value += player_card
             print("You have " + str(player_card_value))
         if hit_choice == 'stand':
+            print("You have " + str(player_card_value))
         # elif choice == 'stand'
             # show both cards
             print("DEALER CARDS: ")
-            print_cards(dealer_cards[:-1], True)
+            # print_cards(dealer_cards[:-1], True)
+
             print("DEALER SCORE = ", dealer_score - dealer_card_value[-1].card_value)
 
     print()
