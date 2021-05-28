@@ -14,11 +14,10 @@ MAX_RANDOM = 11
 NUM_RANDOM = 3
 
 
+
 def main():
     # Let's get started with some liquid courage
-    print("I still remember how to do a print statement!\n")
-
-
+    print("I still remember how to do a print statement!\nWhew - I deserve a drink!")
 
     # TODO: Hey Matt - how do we play Blackjack again?
     # type of suit
@@ -45,14 +44,14 @@ def main():
     print("Here are two cards.")
     # player_card_one = input(random.randint(MIN_RANDOM, MAX_RANDOM))
     player_card_one = random.randint(MIN_RANDOM, MAX_RANDOM)
-    print(str(player_card_one) + "\n")
+    print("First card is ", str(player_card_one))
     # print("card one is type: ", type(player_card_one))
     # player_card_two = input(random.randint(MIN_RANDOM, MAX_RANDOM))
     player_card_two = random.randint(MIN_RANDOM, MAX_RANDOM)
-    print(str(player_card_two) + "\n")
+    print("Second card is ", str(player_card_two))
     # print("card two is type: ", type(player_card_two))
     player_card_value = player_card_one + player_card_two
-    print("player value is " + str(player_card_value))
+    print("You have " + str(player_card_value))
     # print("player_card_value is type: ", type(player_card_value))
 
     # update the player score
@@ -69,12 +68,12 @@ def main():
     # if player score is under 21, ask them if they want to hit or stand
     while player_score < 21:
         choice = str(input("Would you like to hit or stand? "))
-        # if hit_choice() == 'hit':
-        if choice == 'hit'
+        if hit_choice() == 'hit':
+        # if choice == 'hit'
             player_card = random.randint(MIN_RANDOM)
             player_cards.append(player_card)
-        # if stand_choice() == 'stand':
-        elif choice == 'stand'
+        if stand_choice() == 'stand':
+        # elif choice == 'stand'
             # show both cards
             print("DEALER CARDS: ")
             print_cards(dealer_cards[:-1], True)
