@@ -86,13 +86,13 @@ def main():
     print("PLAYER SCORE = ", player_score)
 
     # Check for blackjack
-    you_lose = SimpleImage('lose.jpg')
+    you_lose = SimpleImage('you_lose.jpg')
     you_lose.show()
 
     if player_score > 21 and total < 21:
         print("Sorry. You lose.")
 
-    you_win = SimpleImage('win.png')
+    you_win = SimpleImage('you_win.png')
     you_win.show()
 
     if player_score == 21:
