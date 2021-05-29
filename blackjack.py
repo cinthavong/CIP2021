@@ -45,20 +45,18 @@ def main():
 
     # player_card_one = input(random.randint(MIN_RANDOM, MAX_RANDOM))
     player_card_one = random.randint(MIN_RANDOM, MAX_RANDOM)
-    print("First card is ", str(player_card_one))
+    print("First card is ", player_card_one)
     # print("card one is type: ", type(player_card_one))
-
     # player_card_two = input(random.randint(MIN_RANDOM, MAX_RANDOM))
     player_card_two = random.randint(MIN_RANDOM, MAX_RANDOM)
-    print("Second card is ", str(player_card_two))
+    print("Second card is ", player_card_two)
     # print("card two is type: ", type(player_card_two))
-
     player_card_value = player_card_one + player_card_two
-    print("You have " + str(player_card_value) + "\n")
+    print("You have " + player_card_value)
     # print("player_card_value is type: ", type(player_card_value))
-
     # update the player score
     player_score += player_card_value
+    print("Player score is: " + player_score)
 
     # dealing a card to AI or dealer
     dealer_card_one = random.randint(MIN_RANDOM, MAX_RANDOM)
